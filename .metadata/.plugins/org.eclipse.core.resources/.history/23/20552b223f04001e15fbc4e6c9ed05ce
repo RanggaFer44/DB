@@ -1,0 +1,36 @@
+package DataB;
+
+import java.sql.*;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner Sc = new Scanner(System.in);
+		String Dt = new String();
+		Connection con = null;
+		Statement stmn = null;
+				
+		try {
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login_Data","root","modernwarfare");	
+			stmn =con.createStatement();
+			Dt = "INSERT INTO data"
+				+ "(Nama, Kelas, Tanggal_Lahir)"
+				+ Sc.next();
+					
+			
+		 if (con!=null) {
+			System.out.println("connected succesfully");
+		}
+		}
+		catch (Exception e){ 
+			System.out.println("not connected");
+		}
+		
+		
+		
+		
+	}
+	
+	
+}

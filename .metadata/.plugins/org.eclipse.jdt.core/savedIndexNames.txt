@@ -1,0 +1,10 @@
+INDEX VERSION 1.132+C:\Users\HELLO\Documents\tugas\EC DB\.metadata\.plugins\org.eclipse.jdt.core
+661134813.index
+1067094681.index
+3959137331.index
+1014222240.index
+1865797976.index
+2699176396.index
+4105855396.index
+3987830505.index
+2518721659.index

@@ -1,0 +1,32 @@
+package DataB;
+
+import java.sql.*;
+
+public class input {
+	
+	public static void main (String[] args) {
+	
+	String Dt = new String();
+	Connection con = null;
+	Statement stmn = null;
+			
+	try {
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Login_Data","root","modernwarfare");	
+		stmn =con.createStatement();
+		Dt = "INSERT INTO data"
+			+ "(NIS, Nama, Kelas, Tanggal_Lahir)"
+			+ "(0014, Rangga, Ipa3, 2004)";
+		stmn.execute(Dt);
+				
+		
+	 if (con!=null) {
+		System.out.println("connected succesfully");
+	}
+	}
+	catch (Exception e){ 
+		System.out.println("not connected");
+	}
+	
+	}
+}
+
